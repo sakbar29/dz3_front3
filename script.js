@@ -44,7 +44,7 @@ tabsParent.addEventListener("click", (event) => {
 
 let slider = 0;
 setInterval(() => {
-    if (slider < 3) {
+    if (slider <= 4) {
         slider++
         hideTabContent()
         showTabContent(slider)
@@ -53,7 +53,7 @@ setInterval(() => {
         hideTabContent()
         showTabContent(slider)
     }
-},3000);
+},2000);
 
 const modal = document.querySelector(".modal")
 const modalTrigger = document.querySelector(".btn_white")
